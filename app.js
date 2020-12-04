@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 app.use(ef({
     useTempFiles : true,
-    tempFileDir : 'C:/tmp/'
+    tempFileDir : '/tmp/'
 }));
 
 
