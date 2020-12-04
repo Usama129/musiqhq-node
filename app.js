@@ -37,7 +37,9 @@ function recognize(path){
     })
 }
 
-
+app.get("/", function(req, res){
+    res.send("Unviewable")
+})
 
 app.post("/recog", function(req, res){
    recognize(req.files.audioFile.tempFilePath)
