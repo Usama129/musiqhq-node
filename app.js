@@ -4,6 +4,8 @@ const ef = require('express-fileupload')
 const axios = require('axios')
 var cors = require('cors')
 
+const PORT = process.env.PORT || 5000;
+
 const fs = require('fs');
 const app = express()
 app.use(cors())
@@ -50,7 +52,6 @@ app.post("/recog", function(req, res){
    })
 })
 
-app.listen(80, function(req, res){
-    console.log("Listening on :80")
-
+app.listen(PORT, function(){
+    console.log("Listening on " + PORT)
 })
