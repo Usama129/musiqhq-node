@@ -50,7 +50,7 @@ app.post("/recog", function(req, res){
    })
 })
 
-app.listen(9000, function(req, res){
-    console.log("Listening on port 9000")
+app.listen(80, function(req, res){
+    console.log("Listening on :80")
 
 })
