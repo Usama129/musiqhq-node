@@ -2,7 +2,6 @@ const express = require('express')
 const FormData = require('form-data');
 const ef = require('express-fileupload')
 const axios = require('axios')
-const formidable = require('formidable');
 var cors = require('cors')
 
 const fs = require('fs');
@@ -19,7 +18,7 @@ function recognize(path){
 
     const form = new FormData();
     form.append("file", fs.createReadStream(path));
-    form.append('api_token', '')
+    form.append('api_token', '210f7e7fb7de8c169995e9649ad94956')
     const request_config = {
         headers: {
             ...form.getHeaders()
