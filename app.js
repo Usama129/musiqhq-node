@@ -19,7 +19,7 @@ function recognize(path){
 
     const form = new FormData();
     form.append("file", fs.createReadStream(path));
-    form.append('api_token', '210f7e7fb7de8c169995e9649ad94956')
+    form.append('api_token', '')
     const request_config = {
         headers: {
             ...form.getHeaders()
